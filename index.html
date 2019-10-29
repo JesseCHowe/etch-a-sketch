@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <button id="resetButton">Reset Grid</button>
         <div id="container"></div>
-        <script>
-            const gridContainer = document.getElementById('container');
-            let gridDimensions = 16;
-            for(let i = 0; i < gridDimensions**2; i++) {
-                let grid = document.createElement('div');
-                grid.classList.add("square");
-                gridContainer.appendChild(grid);
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

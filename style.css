@@ -1,0 +1,21 @@
+:root {
+    --gridDimension: 16;
+    --defaultColor: #001628;
+    --hoverColor: red;
+    --gridArea: 500px;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(var(--gridDimension), 1fr);
+    grid-template-rows: repeat(var(--gridDimension), 1fr);
+    margin: 0 auto;
+    background: gray;
+    width: var(--gridArea);
+    height: var(--gridArea);
+}
+
+.square{
+    background: var(--defaultColor);
+    stroke: 1px solid gray;
+    opacity: 0;
+}
